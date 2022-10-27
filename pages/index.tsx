@@ -88,7 +88,7 @@ const Home: NextPage = () => {
                   </div>
                   <div className='flex flex-col justify-center items-center  h-full w-full'>
                     <img src="/image/martian.png" alt="Logo"/>
-                    <button className={`${styles.filledBtn} py-[30px] px-[25px] bg-[rgb(21, 215, 145)] text-[#000] font-semibold`} onClick={btnCreateNft}>Mint First Aptos NFT</button>
+                    <button className={`${styles.filledBtn} py-[30px] px-[25px] bg-[rgb(21, 215, 145)] text-[#000] font-semibold`} onClick={btnCreateNft}>Mint Aptos Kingdom NFT</button>
                   </div>
 
                 </div>
