@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import { useState, useEffect, useCallback } from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/home.module.scss'
 import { createInflate } from 'zlib'
@@ -48,8 +49,8 @@ const Home: NextPage = () => {
 
   const btnCreateNft = async () => {
 
-    const txnHash1 = await window.martian.createCollection("AptosNFT", "This is first NFT in Aptos Chain by Andrei", nftImgUrl)
-    const txnHash = await window.martian.createToken("AptosNFT", "#"+nftID, "This is first NFT in Aptos Chain by Andrei", 1, nftImgUrl, 1)
+    const txnHash1 = await window.martian.createCollection("Aptos Kingdom NFT", "This is first NFT in Aptos Chain by Charile", nftImgUrl)
+    const txnHash = await window.martian.createToken("Aptos Kingdom NFT", "#"+nftID, "This is first NFT in Aptos Chain by Charile", 1, nftImgUrl, 1)
     let id = Math.floor(Math.random() * (1999 - 0 + 1)) + 0;
     setnftID(id)
   }
@@ -82,7 +83,11 @@ const Home: NextPage = () => {
                       <button className={`${styles.filledBtn} py-[10px] px-[25px] bg-[rgb(21, 215, 145)] text-[#000] font-semibold`}>Create NFT Collection</button>
                     </div>
                   }
+                  <div>
+                    
+                  </div>
                   <div className='flex flex-col justify-center items-center  h-full w-full'>
+                    <img src="/image/martian.png" alt="Logo"/>
                     <button className={`${styles.filledBtn} py-[30px] px-[25px] bg-[rgb(21, 215, 145)] text-[#000] font-semibold`} onClick={btnCreateNft}>Mint First Aptos NFT</button>
                   </div>
 
@@ -91,6 +96,7 @@ const Home: NextPage = () => {
             )
           )
         }
+        
       </div>
       
       <Link href={'/'}>
@@ -99,11 +105,15 @@ const Home: NextPage = () => {
           <p>Aptos Kingdom</p>
         </a>
       </Link>
-      <Link href={'/'}>
-        <a className={`${styles.absolute_div} right-[70px]`}>
-        {address.substring(0, 6) + "..." + address.substring(address.length - 4)}
-        </a>
-      </Link>
+      {
+        address.length>0 &&
+        <Link href={'/'}>
+          <a className={`${styles.absolute_div} right-[70px]`}>
+           {address.substring(0, 6) + "..." + address.substring(address.length - 4)}
+          </a>
+        </Link>
+      }    
+
     </div>
   )
 }
