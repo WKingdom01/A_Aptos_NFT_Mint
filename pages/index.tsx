@@ -23,7 +23,7 @@ const Home: NextPage = () => {
   useEffect(() => {
     let id = Math.floor(Math.random() * (1999 - 0 + 1)) + 0;
     setnftID(id)
-    setNftImgUrl("https://nftstorage.link/ipfs/bafybeibmakm5ihxzl4fc65eqbjrqueebfwocfxynulihzt6l3cgxnnwmqe"+id+".png")
+    setNftImgUrl("https://nftstorage.link/ipfs/bafybeibmakm5ihxzl4fc65eqbjrqueebfwocfxynulihzt6l3cgxnnwmqe")
   }, [])
 
   const btnConnect = async () => {
