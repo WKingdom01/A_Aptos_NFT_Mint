@@ -1,0 +1,88 @@
+.homeContainer {
+    .absolute_div {
+        align-items: center;
+        background-color: #222;
+        border: 1px solid #323232;
+        border-radius: 12px;
+        box-shadow: 0 10px 20px rgb(0 0 0 / 30%);
+        cursor: pointer;
+        display: flex;
+        height: 40px;
+        justify-content: center;
+        position: absolute;
+        right: 70px;
+        text-decoration: none;
+        top: 30px;
+        transition: all .3s ease;
+        width: 150px;
+
+        p {
+            background-color: transparent;
+            color: #fff;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            letter-spacing: -.02em;
+            line-height: 18px;
+            margin-left: 10px;
+            text-align: center;
+        }
+    }
+
+    .btn {
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
+        background: linear-gradient(103.69deg,hsla(0,0%,100%,.2) -40.6%,hsla(0,0%,100%,.08) 103.61%);
+        border: none;
+        border-radius: 8px;
+        color: #ccc;
+        cursor: pointer;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        outline: none;
+        padding: 15px 10px;
+        text-align: center;
+        transition: all .3s ease;
+    }
+    .textGreen {
+        color: #15d791;
+    }
+    .textDarkgreen {
+        color: #15d791;
+    }
+
+    .input {
+        background: #0f0f0f;
+        border: 1px solid #4e4e4e;
+        border-radius: 4px;
+        box-shadow: 0 4px 12px rgb(0 0 0 / 25%);
+        box-sizing: border-box;
+        color: #fff;
+        display: block;
+        font-size: 15px;
+        height: 100%;
+        margin: 10px 0;
+        outline: none;
+        padding: 12px;
+        width: 100%;
+    }
+
+    .filledBtn {
+        align-items: center;
+        background: linear-gradient(270deg,#35f46b,#09f0e2);
+        border: none;
+        border-radius: 4px;
+        box-shadow: 6px 4px 18px rgb(0 255 163 / 35%), inset -15px 0 31px rgb(6 109 66 / 15%), inset 15px 7px 40px rgb(8 210 137 / 50%);
+        color: #1c1c1c;
+        cursor: pointer;
+        display: flex;
+        font-size: 18px;
+        font-weight: 700;
+        justify-content: center;
+        margin-top: 10px;
+        padding: 8px;
+        width: 100%;
+    }
+}

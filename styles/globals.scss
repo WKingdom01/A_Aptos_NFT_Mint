@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#__next, body {
+    align-items: center;
+    background-color: #1c1c1c;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    width: 100%;
+}
